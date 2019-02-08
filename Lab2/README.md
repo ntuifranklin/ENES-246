@@ -11,65 +11,58 @@ This is solved by moving from two states of on or off to three states or "triSta
 
 #### Port Diagram
 
-![port diagram](port diagram.PNG)
+![Port_Diagram_tris_state_buffer](Port_Diagram_tris_state_buffer.PNG)
 
 #### Verilog Code
 
+`timescale 1ns / 1ps
+
 module vcb(
-
-​	input sw0,
-
-​	input sw1,
-
-​	output LED
-
-);
-
-tri LED;
-
-bufif1 b1(LED, sw0, sw0);
-
-bufif1 b2(LED, sw1, sw1);
-
+   input  sw0,
+   input  sw1,
+   output tri LED
+   );
+   bufif1 b1(LED, sw0, sw0);
+   bufif1 b2(LED, sw1, sw1);
 endmodule
 
 #### RTL Schematic Screen shot
 
-![RTL-Schematic-Screenshot](RTL-Schematic-Screenshot.PNG)
+![RTL_Schematic_Screen_Shot](RTL_Schematic_Screen_Shot.PNG)
 
-#### Synthesis Schematic Screen shot
+#### Synthesis Schematic Screen Shot
 
-![Synthesis-Schematic-Screen-shot](Synthesis-Schematic-Screen-shot-1549315588573.PNG)
+![Synthesis_Schematic_Screen_Shot](Synthesis_Schematic_Screen_Shot.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting  
 
-![Implementation-Device-Screen-Shot-Zoomed-in-on-something-interesting](Implementation-Device-Screen-Shot-Zoomed-in-on-something-interesting.PNG)
+![Implementation_Device_Screen_Shot](Implementation_Device_Screen_Shot.PNG)
 
 #### Testing
 
 Here is the above different from the two state situation from the first lab.  When sw0 is 0, the tristate buffer doesn't try to ground the LED. It outputs nothing. *What is the difference between 0 (false) and nothing .. don't care .. high input impedance... etc?* 
 
-Answer :  A zero(false) is no current flowing through the wire. A high input impedance or "don't care" is a state where any amount of current can flow and it will not affect the circuit
+0 means the wire is not driven. Nothing means the wire is disconnected
 
 *What happens when both switches are zero (false)? What could happen?*
 
-Answer: When both switches are zero(false), the output is in an open state
+When both switches are zero(false), there is no current flow to the LED. The LED is off.
 
 *So what is the difference between 0 and off?* 
 
-off means the wire is disconnected, and 0 means no flow of current
+In a two state circuit, 0 and off are the same thing. In a tristate buffer, off implies the wire is disconnected, and 0 means no current is flowing
 
 *What is the difference between 0 and 1?* 
 
-0 is no flow of current and 1 is a flow of current at 5
+0 means no current flowing, and 1 means energy is flowing.
 
 *What does a designer have to worry about when working with tri-state?* 
 
-When working with tristate wires, the designer have to make sure that the wire is driven by some input at all times. Could be driven to 1 or driven to a 0.
+A designer has to make sure that the wire is being driven by input at all times
 
 *What kind of gate (and, nand, or, nor, xor, xnor, not) is this circuit?*
 
-It's an AND gate
+This is an or gate. The LED is on when either of the switches are on, and the LED is off when both switches go off. This is the characteristics of an or gate.
 
 *Zoom in on a pull down resistor*
 
@@ -79,35 +72,34 @@ Hook the switches to the LED's in some creative way of your choice using the con
 
 #### Port Diagram
 
-![port diagram part two](C:\ENES-246\Lab2\port diagram part two.PNG)
+![Port_Diagram_tris_state_buffer_Be_Creative](Port_Diagram_tris_state_buffer_Be_Creative.PNG)
 
 #### Verilog Code
 
+`timescale 1ns / 1ps
+
 module vcb(
-
-​	input a,
-
-​	input b,
-
-​	input c,
-
-​	output z
-
-);
-
+   input  sw0,
+   input  sw1,
+   input  sw2,
+   output tri LED
+   );
+   bufif1 b1(LED, sw0, sw0);
+   bufif1 b2(LED, sw1, sw1);
+   bufif1 b3(LED, sw2, sw2);
 endmodule
 
 #### RTL Schematic Screen shot
 
-![RTL-Schematic-Screenshot-part-two](C:\ENES-246\Lab2\RTL-Schematic-Screenshot-part-two.PNG)
+![RTL_Schematic_Screen_Shot_BE_Creative](RTL_Schematic_Screen_Shot_BE_Creative.PNG)
 
 #### Synthesis Schematic Screen shot
 
-![synthesis-schematic-screenshot-part-two](C:\ENES-246\Lab2\synthesis-schematic-screenshot-part-two.PNG)
+![Synthesis_Schematic_Screen_Shot_Be_Creative](Synthesis_Schematic_Screen_Shot_Be_Creative.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-![implementation-Device-Part-Two](implementation-Device-Part-Two.PNG)
+![Implementation_Device_Screen_Shot_Be_Creative](Implementation_Device_Screen_Shot_Be_Creative.PNG)
 
 #### Testing
 
@@ -116,6 +108,16 @@ Many people are replacing light bulbs with LED's that last forever. Most are 12 
 ​	[wikipedia Multiway_Switching Traveler_system_2](https://en.wikipedia.org/wiki/Multiway_switching#Traveler_system_2)
 
 There is a transition, a business opportunity, a standards opportunity here.  Compare the "3-way" and "4-way switches" at Home Depot or Lowes.  
+
+3-way switches are 3 switches that control a certain number of bulbs(LEDs, 1 or more). if we have more than one LED, they have to be in series with the 3 switches for current to flow through them.
+
+![Three_3_way_Switches](Three_3_way_Switches.PNG)
+
+
+
+Taken from : http://users.wfu.edu/matthews/courses/p230/switches/SwitchesTut.html
+
+4-way switches are like 3-way switches, the difference being that there are 4 switches controlling the bulbs(LEDs). Just as in 3-way switches, the bulbs are controlled by 4 different switches. The bulbs are connected in series to all the 4 switches.
 
 *Can a voltage controlled buffer reduce the amount of copper needed?*
 
