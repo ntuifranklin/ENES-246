@@ -1,0 +1,194 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 14996
+License: Customer
+
+Current time: 	Fri Mar 01 14:44:36 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 675 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	oraclepc
+User home directory: C:/Users/oraclepc
+User working directory: C:/Users/oraclepc/Documents/ENES246-master/-4LotsOfGates/project_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/oraclepc/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/oraclepc/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/oraclepc/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/oraclepc/Documents/ENES246-master/-4LotsOfGates/project_2/vivado.log
+Vivado journal file location: 	C:/Users/oraclepc/Documents/ENES246-master/-4LotsOfGates/project_2/vivado.jou
+Engine tmp dir: 	C:/Users/oraclepc/Documents/ENES246-master/-4LotsOfGates/project_2/.Xil/Vivado-14996-DESKTOP-S1LP2KU
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 670 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\oraclepc\Documents\ENES246-master\-4LotsOfGates\project_2\project_2.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/oraclepc/Documents/ENES246-master/-4LotsOfGates/project_2/project_2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/oraclepc/Documents/ENES246-master/-4LotsOfGates/project_2/project_2.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+94344kb) [00:00:08]
+// [Engine Memory]: 618 MB (+496388kb) [00:00:08]
+// [GUI Memory]: 104 MB (+7715kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2790 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 682 MB. GUI used memory: 51 MB. Current time: 3/1/19, 2:44:36 PM EST
+// [Engine Memory]: 682 MB (+34840kb) [00:00:11]
+// Project name: project_2; location: C:/Users/oraclepc/Documents/ENES246-master/-4LotsOfGates/project_2; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 24 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 28, false); // u (Q, cp)
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 868 MB. GUI used memory: 50 MB. Current time: 3/1/19, 2:45:10 PM EST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,449 MB. GUI used memory: 50 MB. Current time: 3/1/19, 2:45:19 PM EST
+// [Engine Memory]: 1,468 MB (+787968kb) [00:00:54]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,581 MB (+42092kb) [00:00:54]
+// [GUI Memory]: 124 MB (+15566kb) [00:00:55]
+// [GUI Memory]: 133 MB (+2832kb) [00:00:56]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2318 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1541.789 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1541.789 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1541.789 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1672.145 ; gain = 921.629 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 140 MB (+320kb) [00:00:58]
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 19 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 0.6
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 1.2
+// HMemoryUtils.trashcanNow. Engine heap size: 1,634 MB. GUI used memory: 84 MB. Current time: 3/1/19, 2:45:30 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 1.8
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 2.3
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 2.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 3.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 4.1
+// HMemoryUtils.trashcanNow. Engine heap size: 1,634 MB. GUI used memory: 93 MB. Current time: 3/1/19, 2:45:35 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,634 MB. GUI used memory: 85 MB. Current time: 3/1/19, 2:45:39 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,634 MB. GUI used memory: 85 MB. Current time: 3/1/19, 2:45:39 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,634 MB. GUI used memory: 85 MB. Current time: 3/1/19, 2:45:41 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 3.5
+// [Engine Memory]: 1,665 MB (+5472kb) [00:01:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,667 MB. GUI used memory: 146 MB. Current time: 3/1/19, 2:45:47 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 2.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// [GUI Memory]: 157 MB (+10173kb) [00:01:27]
+// Device view-level: 3.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 4.1
+// HMemoryUtils.trashcanNow. Engine heap size: 1,670 MB. GUI used memory: 85 MB. Current time: 3/1/19, 2:45:54 PM EST
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 4.7
+// HMemoryUtils.trashcanNow. Engine heap size: 1,670 MB. GUI used memory: 85 MB. Current time: 3/1/19, 2:45:59 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,670 MB. GUI used memory: 85 MB. Current time: 3/1/19, 2:46:02 PM EST
